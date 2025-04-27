@@ -20,17 +20,34 @@ body{
     margin: 0;
 }
 
-.navbar a {
+.nav-links a {
     text-decoration: none;
     padding: 10px;
     display: inline-block;
     font-weight: 600;
+    position: relative;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.nav-links a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0ea5e9;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.nav-links a:hover:after {
+    width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
     color: #0ea5e9;
 }
+
+
 .home h6 {
     font-size: 18px;
     font-weight: 400;
