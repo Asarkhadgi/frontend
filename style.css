@@ -47,6 +47,26 @@ body{
     color: #0ea5e9;
 }
 
+#navbar-solid-bg {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+@media (max-width: 767px) {
+    #navbar-solid-bg ul {
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+    #navbar-solid-bg ul li {
+        margin-bottom: 0.5rem;
+    }
+    #navbar-solid-bg ul li a {
+        display: block;
+        padding: 0.75rem 1rem;
+        border-radius: 0.375rem;
+        font-weight: 600;
+    }
+}
 
 .home h6 {
     font-size: 18px;
